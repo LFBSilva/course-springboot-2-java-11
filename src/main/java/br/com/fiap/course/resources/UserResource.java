@@ -15,18 +15,18 @@ import br.com.fiap.course.services.UserService;
 @RestController
 @RequestMapping(value = "/users")
 public class UserResource {
-	
+
 	@Autowired
 	private UserService service;
-	
+
 	@GetMapping
 	public ResponseEntity<List<User>> findAll() {
 		List<User> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 	}
-	
+
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<User> findByID(@PathVariable Long id){
+	public ResponseEntity<User> findByID(@PathVariable Long id) {
 		User obj = service.findByID(id);
 		return ResponseEntity.ok().body(obj);
 	}
