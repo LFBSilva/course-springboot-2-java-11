@@ -1,4 +1,4 @@
-package com.example.course.entities;
+package br.com.fiap.course.entities;
 
 import java.io.Serializable;
 
