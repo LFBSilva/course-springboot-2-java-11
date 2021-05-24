@@ -7,7 +7,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-
 import br.com.fiap.course.entities.User;
 import br.com.fiap.course.repositories.UserRepository;
 
